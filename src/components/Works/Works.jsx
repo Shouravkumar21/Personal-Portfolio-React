@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import ipat from "../../img/ipat logo.png";
+import instacity from "../../img/logo instacity.png";
+import ezimax from "../../img/ezimax logo.jpeg";
+import ims from "../../img/ims.jpeg";
+// import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -54,20 +54,20 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={instacity} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={ezimax} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={ipat} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={ims} alt="" />
           </div>
-          <div className="w-secCircle">
+          {/* <div className="w-secCircle">
             <img src={Facebook} alt="" />
-          </div>
+          </div> */}
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>

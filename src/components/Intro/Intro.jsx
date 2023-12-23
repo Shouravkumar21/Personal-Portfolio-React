@@ -1,3 +1,5 @@
+// Intro.js
+
 import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
@@ -13,6 +15,7 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -28,20 +31,25 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Shourav Kumar</span>
           <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+            As a frontend developer, I specialize in essential web development technologies, including HTML, CSS, JavaScript, React, and Bootstrap. This comprehensive skill set underscores my capability to create dynamic and responsive user interfaces, ensuring a seamless user experience.<br></br> In addition to my coding expertise, I am well-versed in design tools such as Figma and Canva. This dual proficiency reflects a balanced approach to frontend development, where technical prowess is complemented by a keen understanding of design principles.<br></br> The integration of design tools into my workflow demonstrates not only versatility but also a holistic perspective, highlighting my ability to navigate the complete frontend development spectrum.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
         </Link>
-        {/* social icons */}
+        {/* social icons with links */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/Shouravkumar21" target="_blank" rel="noopener noreferrer">
+            <img src={Github} alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/shourav-kumar-299398233/" target="_blank" rel="noopener noreferrer">
+            <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a href="https://www.instagram.com/your-instagram-username" target="_blank" rel="noopener noreferrer">
+            <img src={Instagram} alt="Instagram" />
+          </a>
         </div>
       </div>
       {/* right image side */}
